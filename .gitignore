@@ -1,0 +1,65 @@
+# ---------- Python 编译产物 ----------
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# ---------- 打包与分发 ----------
+build/
+dist/
+sdist/
+wheels/
+*.egg-info/
+.eggs/
+MANIFEST
+pip-log.txt
+pip-delete-this-directory.txt
+
+# ---------- 测试与覆盖率 ----------
+.pytest_cache/
+.coverage
+.coverage.*
+coverage.xml
+htmlcov/
+.tox/
+.nox/
+.hypothesis/
+
+# ---------- 虚拟环境 ----------
+.venv/
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# ---------- 类型检查 / lint 缓存 ----------
+.mypy_cache/
+.dmypy.json
+dmypy.json
+.pyre/
+.pytype/
+.ruff_cache/
+.cache/
+
+# ---------- Jupyter ----------
+.ipynb_checkpoints/
+
+# ---------- 密钥与本地配置 ----------
+.env
+.env.local
+
+# ---------- 编辑器 / IDE ----------
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# ---------- 操作系统 ----------
+.DS_Store
+Thumbs.db
+
+# ---------- 以下文件应当提交，故意不忽略 ----------
+# uv.lock         锁定依赖版本，保证任何人 clone 后拿到完全一致的环境
+# .python-version uv 用它固定项目的 Python 版本（注意：pyenv 系模板通常会忽略它，本项目不能忽略）
